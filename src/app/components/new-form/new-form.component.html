@@ -1,0 +1,153 @@
+<!-- <<div class="row">
+  <div class="col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="text-center">Registration Form</h3>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="registrationForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              class="form-control"
+              [formControl]="username"
+            />
+            <div [hidden]="username.valid || username.untouched">
+              <small
+                style="color: red"
+                [hidden]="!username.hasError('required')"
+              >
+                Username is required
+              </small>
+              <small style="color: red;" [hidden]="!username.hasError('email')">
+                Username should be an Email
+              </small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              [formControl]="password"
+            />
+            <div [hidden]="password.valid || password.untouched">
+              <small
+                style="color: red"
+                [hidden]="!password.hasError('required')"
+              >
+                password is required
+              </small>
+              <small
+                style="color: red"
+                [hidden]="!password.hasError('pattern')"
+              >
+                password should contain minimum 8 characters and one special
+                character
+              </small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              class="form-control"
+              [formControl]="confirmPassword"
+            />
+            <div [hidden]="confirmPassword.valid || confirmPassword.untouched">
+              <small
+                style="color: red"
+                [hidden]="!confirmPassword.hasError('required')"
+              >
+              confirmPassword is required
+              </small>
+              <small
+                style="color: red"
+                [hidden]="!confirmPassword.hasError('passwordMismatch')"
+              >
+                Both passwords should match
+              </small>
+            </div>
+          </div>
+          <div class="form-group">
+            <p>Please select your gender:</p>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              [formControl]="gender"
+            />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              [formControl]="gender"
+            />
+            <label for="female">Female</label>
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+              [formControl]="gender"
+            />
+            <label for="other">Other</label>
+          </div>
+          <div class="form-group">
+            <mat-form-field appearance="fill">
+              <mat-label>Select Your City</mat-label>
+              <mat-select name="address" [formControl]="address">
+                <div *ngFor="let city of cities">
+                  <mat-option value="{{ city }}">{{ city }}</mat-option>
+                </div>
+              </mat-select>
+              <div [hidden]="address.valid || address.untouched">
+                <small
+                  style="color: red"
+                  [hidden]="!address.hasError('required')"
+                >
+                Address is required
+                </small>
+              </div>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <label for="phone">Contact Number:</label>
+            <input
+              type="text"
+              name="phone"
+              class="form-control"
+              placeholder="xxxx-xxx-xxx"
+              mask="0000-000-000"
+              [formControl]="phone"
+            />
+            <div [hidden]="phone.valid || phone.untouched">
+              <small
+                style="color: red"
+                [hidden]="!phone.hasError('required')"
+              >
+              Contact Number is required
+              </small>
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <button
+              class="btn btn-success"
+              [disabled]="registrationForm.invalid"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+<h1><b><i><u>NEW FORM <small style="font-size:10px">working</small></u></i></b></h1>
